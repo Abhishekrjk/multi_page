@@ -1,0 +1,273 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(#FCFAFB, #C8D3D6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+header .logo{
+    margin-left: 5%;
+    font-weight: bolder;
+    font-size: x-large;
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+header .search{
+    border-radius: 10px;
+    padding: 3px;
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+header .menu{
+    list-style: none;
+    display: flex;
+    margin-right: 5%;
+    gap: 5px;
+    
+}
+
+header .menu li a{
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+    letter-spacing: 0.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+header .button{
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+section .slider{
+    height:50vh;
+    width: 400%;
+    display:flex;
+    animation-name:slider;
+    animation-duration: 10s;
+    animation-delay:1s;
+    animation-iteration-count:infinite;
+    position:relative;
+    
+}
+
+section .slider img{
+    width: 25%;
+    height: 100%;
+}
+
+section .products{
+    width: 100%;
+    height: auto;
+    background-color: #C8D3D6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-around;
+    position:absolute;
+    
+}
+
+section .products .p1{
+    width: 20%;
+    height: 35vh;
+    background-color: #FCFAFB;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px black;
+}
+
+section .products .p1 img{
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+section .products .p1 p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+section .products #p1 img{
+    padding: 5px;
+}
+
+section .products #p2 img{
+    padding: 5px;
+}
+
+section .products #p3 img{
+    padding: 5px;
+}
+
+section .products #p4 img{
+    padding: 5px;
+}
+
+section .products #p5 img{
+    padding: 5px;
+}
+
+section .products #p6 img{
+    padding: 5px;
+}
+
+section .products #p7 img{
+    padding: 5px;
+}
+
+section .products #p8 img{
+    padding: 5px;
+}
+
+section .products #p9 img{
+    padding: 5px;
+}
+
+section .products #p10 img{
+    padding: 5px;
+}
+section .products #p11 img{
+    padding: 5px;
+}
+section .products #p12 img{
+    padding: 5px;
+}
+section .products #p13 img{
+    padding: 5px;
+}
+section .products #p14 img{
+    padding: 5px;
+}
+section .products #p15 img{
+    padding: 5px;
+}
+section .products #p16 img{
+    padding: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+}
+
+footer .upper{
+    width: 100%;
+    height: 90%;
+    background-color: #031419;
+    margin-top: 2px;
+}
+
+footer .lower{
+    width: 100%;
+    height: 10%;
+    background-color: #031419;
+    margin-top: 0.5px;
+}
+
+footer .lower p{
+    color: #FCFAFB;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes slider {
+    0%{
+        left: 0%;
+    }
+
+    16%{
+        left: -100%;
+    }
+
+    32%{
+        left:-200%;
+    }
+
+    48%{
+        left: -300%;
+    }
+
+    64%{
+        left: -200%;
+    }
+
+    80%{
+        left:-100%;
+    }
+
+    96%{
+        left:0%
+    }
+}
+
+@media (max-width: 420px) {
+
+        header{
+            display: block;
+            width: 100%;
+            height: 10vh;
+            background: linear-gradient(#FCFAFB, #C8D3D6);
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            flex-wrap:wrap ;
+            position: relative;
+        }
+
+        header .button{
+            display: block;
+            margin-right: 5%;
+            font-size: larger;
+            color:darkblue;
+        }
+
+    
+        header .menu{
+            display: block;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+            top: 10%;
+            background-color:darkmagenta;
+            width: 100%;
+            left: -100%;
+            transition: 2s ease-in;
+        }
+
+        #click:checked ~ .button i::before{
+            content: "\f00d";
+        }
+
+        #click:checked ~ .menu{
+            left: 0%;
+        }
+
+        
+
+
+    }

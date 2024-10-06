@@ -1,0 +1,103 @@
+
+body{
+    background-color:transparent;
+     overflow-x: hidden;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+header .first{
+    background: url(assets/taskback2.jpg) ;
+    background-color:  rgba(0, 0, 2, 0.276);
+    height: 100vh;
+    width: 100%;
+
+}
+header .first .nav1{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+header .first .nav1 .logo{
+    height: 100%;
+    width: 20%;
+    position: relative;
+    left: 10%;
+}
+header .first .nav1 .logo img{
+    height: 30%;
+    width: 100%;
+    position: relative;
+    left: 10%;
+    align-items: center;
+}
+header .first .nav1 .div2{
+position: relative;
+right: 10%;
+display: flex;
+justify-content: space-between;
+width: 30%;
+
+}
+#pdt{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    height: 25%;
+    width: 50%;
+    position: relative;
+    left: 10px;
+
+}
+header .first .nav1 .sign-in{
+    background-color: red;
+    height: 25%;
+    font-weight: 800;
+    color: white;
+    align-items: center;
+    border-radius: 5px;
+    width: 40%; 
+}
+header .first .nav1 .sign-in a{
+   text-decoration: none;
+   color: white;
+   position: relative;
+   left: 12%;
+   top: 10%;
+   
+}
+header .first .text{
+  position: relative;
+    height: 20vh;
+    color: white;
+   
+}
+header .first .text h1{
+   font-size: 40px;
+   letter-spacing: px;
+
+
+    
+}
+header  .first .text p{
+    position: relative;
+    top: 20%;
+    font-size: 20px;
+} 
+#text{
+ margin-top: ;
+}
+
+
+
+
+
+

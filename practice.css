@@ -1,0 +1,14 @@
+.outer{
+    height: 80vh;
+    width: 500%;
+    position: relative;
+    display: flex;
+    background-color: aquamarine;
+
+}
+.outer .inner1{
+    width: 20%;
+    height: 100%;
+    
+
+}

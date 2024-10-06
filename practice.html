@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+   <h1> basic  js in hTML</h1>
+
+   <BUtton onclick="body_color()"> click</BUtton>
+   <BUtton onclick="body_color1()"> click</BUtton>
+
+   <div class="outer" id="slider">
+    <div class="inner1">1</div>
+    <div class="inner1">2</div>
+    <div class="inner1">3</div>
+    <div class="inner1">4</div>
+    <div class="inner1">5</div>
+   </div>
+   <div class="bullet">
+    <input type="radio" name="n1" onclick="slider1()">
+    <input type="radio" name="n1" onclick="slider2()">
+    <input type="radio" name="n1" onclick="slider3()">
+    <input type="radio" name="n1" onclick="slider4()">
+    <input type="radio" name="n1" onclick="slider5()">
+   </div>
+   <iframe src="https://www.google.com/maps/@23.2454539,77.4587233,15z?entry=ttu" frameborder="2" height="200px" width="200px"></iframe>
+   <script>
+    function body_color(){
+        document.body.style.backgroundColor="blue"
+    }
+    function body_color1(){
+        document.body.style.backgroundColor="transparent"
+
+    }
+    var x=document.getElementById("slider")
+    console.log(x)
+    function slider1(){
+        x.style.left="0%"
+    }
+        function slider2(){
+        x.style.left="-100%"
+        }
+        function slider3(){
+        x.style.left="-200%"
+    }
+
+        function slider4(){
+        x.style.left="-300%"
+        }
+        function slider5(){
+        x.style.left="-400%"
+    }
+   
+   </script>
+    
+    
+</body>
+</html>
